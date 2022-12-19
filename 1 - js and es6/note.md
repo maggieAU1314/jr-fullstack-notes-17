@@ -206,6 +206,7 @@ console.log(`My name is ${name}, and I'm ${age} years old`);
 const array = [1, 2];
 const newArray = [...array, 3, 4];
 console.log(newArray); // [1, 2, 3, 4]
+const newArray2 =[...array,3,4,...array] ////可以加多个
 ```
 
 ```js
@@ -215,6 +216,7 @@ console.log(newFruit); // {name: "apple", color: "red"}
 newFruit = { color: 'red', ...fruit };
 console.log(newFruit); // {color: "green", name: "apple"}
 ```
+
 
 ## Destructuring
 
@@ -235,9 +237,9 @@ const { name, color } = fruit;
 console.log(name); // apple
 console.log(color); // red
 ```
-
+let 【a3,[b3],d3] =[1,[2,3],4]     //b3是2，不是【2，3】，可以这样解构一个
 we can also rename the variable
-
+let【a4,b4,c4】 =[1]   //b4和c4 是undifined
 ```js
 const fruit = { name: 'apple', color: 'red' };
 const { name: fruitName, color: fruitColor } = fruit;
