@@ -11,6 +11,10 @@
 - [Common array operations](#common-array-operations)
 - [Set](#set)
 - [Basic classes](#basic-classes)
+- ----------------------------------------
+- 其他重要的，不一定是es6
+- 【map】只能是map array
+- 【filter】
 
 ## var vs let and const
 
@@ -903,6 +907,31 @@ setTimeout(foo, 1000);
 runFor1Sec();
 console.log('hello');
 ```
+//其他注意的地方：
+只用于数组中：
+##map
+officer=【{id：10，office=“beijing”}，{id：30，office=“shanghai”}，{id：40，office=“shanghai”}】
+officer 是一个数组
+const officesIds= officer.map（(item)=>{return item.id})
+//一定要有return！！
+//map 返回的是一个新数组！【10，30，40】
+
+
+##filter
+officer 是一个数组
+const office-sh = officer.filter（(item）=> {return officer.office ==="shanghai"
+也可以写成：
+const office-sh = officer.filter（(item，index）=> {return officer.office ==="shanghai"
+//返回包含office是上海的object的数组
+//【{id：30，office=“shanghai”}，{id：40，office=“shanghai”}】
+
+##reduce
+
+
+
+
+
+
 
 Quiz questions references
 [1](https://dmitripavlutin.com/javascript-this-interview-questions/#question-1-variable-vs-property)
