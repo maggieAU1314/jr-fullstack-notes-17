@@ -119,7 +119,7 @@ console.log(fruit);
 ```
 
 #### Update
-
+### 是object，const里面存的是object里面的地址，地址不变，值变是可以的。
 ```js
 const fruit = { name: 'apple', color: 'red' };
 // fruit = {name: "apple", color: "green"}; // Uncaught TypeError: Assignment to constant variable.
