@@ -920,6 +920,7 @@ const officesIds= officer.map（(item)=>{return item.id})
 //foreach 和 map 都不接受break
 //迭代器 for of，
 //在ES6中，所有的集合对象（数组、Set集合及Map集合）和字符串都是可迭代对象，可迭代对象都绑定了默认的迭代器。
+//速度快，没有下标
 
 
 ##filter
