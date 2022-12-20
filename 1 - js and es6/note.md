@@ -15,6 +15,7 @@
 - 其他重要的，不一定是es6
 - 【map】只能是map array
 - 【filter】
+- 【reduce】
 
 ## var vs let and const
 
@@ -909,12 +910,16 @@ console.log('hello');
 ```
 //其他注意的地方：
 只用于数组中：
+
 ##map
 officer=【{id：10，office=“beijing”}，{id：30，office=“shanghai”}，{id：40，office=“shanghai”}】
 officer 是一个数组
 const officesIds= officer.map（(item)=>{return item.id})
-//一定要有return！！
+//一定要有return！！也可以加idex，参考filter
 //map 返回的是一个新数组！【10，30，40】
+//foreach 和 map 都不接受break
+//迭代器 for of，
+//在ES6中，所有的集合对象（数组、Set集合及Map集合）和字符串都是可迭代对象，可迭代对象都绑定了默认的迭代器。
 
 
 ##filter
@@ -925,7 +930,8 @@ const office-sh = officer.filter（(item，index）=> {return officer.office ===
 //返回包含office是上海的object的数组
 //【{id：30，office=“shanghai”}，{id：40，office=“shanghai”}】
 
-##reduce
+##reduce 回调函数
+
 
 
 
